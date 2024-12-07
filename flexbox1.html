@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      
+    }
+
+    body {
+        display: flex;
+        padding: 4px;
+        gap: 4px;
+        height: 100vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    nav, main, aside,footer {
+        border: solid black 1px;
+        padding: 4px;
+    }
+
+    .navbitch {
+        display: flex;
+        justify-content: space-between;
+        padding: 4px;
+        flex-direction: row;
+    }
+
+    nav {
+        display: flex;
+        gap: 4px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .bitc {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .bitch {
+        background-color: red;
+        height: 30px;
+        width: 30px;
+    }
+
+    .biche {
+        gap: 5px;
+        flex-direction: row;
+        display: flex;
+    }
+
+    .bitches {
+        background-color: red;
+        height: 30px;
+        width: 60px;
+
+    }
+
+    main {
+        display: flex;
+        gap: 5px;
+        flex-grow: 1;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-shrink: 1;
+        
+    }
+
+    .anaksamain{
+        display: flex;
+        gap: 4px;
+        border: 1px solid black;
+        padding: 4px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .anaksamaindaw{
+        display:flex;
+        gap: 4px;
+        border: 1px solid black;
+        height: 80px;
+        width: 80px;
+    }
+
+    .tugna{
+        display: flex;
+        gap: 5px;
+        border: 1px solid black;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 7px;
+        
+    }
+
+    .tugnadaw{
+        display:flex;
+        border: 1px solid black;
+        height: 150px;
+        width: 200px;
+        padding: 10px;
+        gap: 5px;
+    }
+    .container {
+        display: flex;
+        gap: 4px;
+        flex-grow: 1;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        width: 15vw;
+        gap: 5px;
+        border: 1px solid black;
+    }
+
+    .asidelang {
+        display: flex;
+        gap: 4px;
+        border: 1px solid black;
+        height: 30px;
+        
+    }
+
+    footer {
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .footerparent {
+        display: flex;
+        gap: 4px;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .foota {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .footabox {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        gap: 5px;
+       
+    }
+
+    .footah{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .mamamo{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="bitc">
+            <div class="bitch"></div>
+            <div>FLEXBOX</div>
+        </div>
+
+        
+        <div class="biche">
+            <div class="bitches"></div>
+            <div class="bitches"></div>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <main>
+            <div class="anaksamain">
+                <div class="anaksamaindaw"></div>
+                <div class="anaksamaindaw"></div>
+                <div class="anaksamaindaw"></div>
+                <div class="anaksamaindaw"></div>
+                <div class="anaksamaindaw"></div>
+                <div class="anaksamaindaw"></div>
+                <div class="anaksamaindaw"></div>
+                <div class="anaksamaindaw"></div>
+                <div class="anaksamaindaw"></div>
+                <div class="anaksamaindaw"></div>
+                <div class="anaksamaindaw"></div>
+                <div class="anaksamaindaw"></div>
+                <div class="anaksamaindaw"></div>
+                <div class="anaksamaindaw"></div>
+                <div class="anaksamaindaw"></div>
+            </div>
+            <div class="tugna">
+                <div class="tugnadaw"></div>
+                <div class="tugnadaw"></div>
+                <div class="tugnadaw"></div>
+            </div>
+        </main>
+        <aside>
+            <div class="asidelang"></div>
+            <div class="asidelang"></div>
+            <div class="asidelang"></div>
+            <div class="asidelang"></div>
+            <div class="asidelang"></div>
+            <div class="asidelang"></div>
+            <div class="asidelang"></div>
+            <div class="asidelang"></div>
+            <div class="asidelang"></div>
+            <div class="asidelang"></div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footerparent">
+            <div class="bitc">
+                <div class="bitch"></div>
+                <div>FLEXBOX</div>
+            </div>
+
+            <div class="biche">
+                <div class="bitches"></div>
+                <div class="bitches"></div>
+            </div>
+        </div>
+
+        <hr>
+        <footah>
+            <div class="foota">
+                <div class="footabox"></div>
+                <div class="footabox"></div>
+                <div class="footabox"></div>
+                <div class="footabox"></div>
+                <div class="footabox"></div>
+            </div>
+            <div class="mamamo">©Copyright All rights reserved.</div>
+        </footah>
+        
+    </footer>
+</body>
+</html>

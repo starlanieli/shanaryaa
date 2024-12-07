@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX 2</title> 
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        nav, aside, main, footer {
+            border:  1px solid black;
+
+        }
+        
+        body {
+            display: flex;
+            gap: 4px;
+            flex-direction: column;
+            padding: 4px;
+            height: calc(100vh - 8px);
+        }
+
+        nav{
+            display: flex;
+            gap: 4px;
+            padding: 4px;
+
+        }
+
+        main{
+            flex-grow: 1;
+        }
+
+        .u1{
+            display: flex;
+            padding: 1px;
+            gap: 3px;
+            flex-direction: column;
+
+        }
+        
+        .mainbox2 {
+            display: flex;
+            border: 1px solid black;
+            gap: 4px;
+            padding: 4px;
+            flex-direction: row;
+            flex-grow: 1;
+        
+        }
+        .minibox{
+            display: flex;
+            border: 1px solid black;
+            gap: 2px;
+            height: 30px;
+            width: 250px;
+        }
+        .container{
+            display: flex;
+            gap: 4px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            overflow-y: hidden;
+        }
+
+        .sudsamain{
+            display: flex;
+            gap: 4px;
+            padding: 4px;
+            height: 585px;
+            flex-grow: 1;                 
+        }
+
+        .box {
+            height: 30px;
+            width: 30px;
+            background-color: red;
+        }
+        .navbox {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+        }
+        .box1 {
+            height: 30px;
+            width: 60px;
+            background-color: red;
+        }
+        .navbox2 {
+            display: flex;
+            gap: 4px;
+            width: 100%;
+            justify-content: end;
+            
+        }
+        aside {
+            width: 250px;
+            display: flex;
+            gap: 4px;
+            flex-direction: column;
+            padding: 4px;
+        }
+
+        .asideni{
+            display: flex;
+            border: 1px solid black;
+            gap: 4px;
+            width: 250px;
+            height: 40px;
+
+        }
+        
+        footer {
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+        }
+        
+        .footercont {
+            display: flex;
+            flex-direction: row; 
+        }
+        .footbox {
+            height: 43px;
+            width: 50px;
+            background-color: red;
+            margin-bottom: 10px;
+            
+        }
+
+        .danscont {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            gap: 4px;
+            overflow: hidden;
+        }
+        
+
+
+        .name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+        }
+
+        .box2babes{
+            display: flex;
+            gap: 3px;
+            padding: 1px;
+            height: 165px;
+            width: 1100px;
+            border: 1px solid black;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .firstsix{
+            display: flex;
+            gap: 15px;
+            padding: 1px;
+            flex-grow: 1;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        .name1 {
+            display: flex;
+            flex-direction: column;
+            column-gap: 4px;
+            justify-content: center;
+        }
+        .fotcon1 {
+            padding: 4px;
+            display: flex;
+        }
+       
+        .fot1box {
+            background-color: red;
+            display: flex;
+            height: 20px;
+            width: 20px;
+            justify-content: end;
+           
+        }
+        
+        .footerbox2 {
+            display: flex;
+            gap: 2px;
+            margin-left: 910px;
+            align-items: center;
+            justify-content: end;
+            
+        }
+
+        .copycat{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .fotcon2{
+            padding: 4px;
+            display: flex;
+        }
+
+        .flexi{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbox">
+            <div class="box"></div>
+            FLEXBOX
+        </div>
+        <div class="navbox2">
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+        </div>
+    </nav>
+    <div class="container">
+        <aside>
+            <div class="asideni"></div>
+            <div class="asideni"></div>
+            <div class="asideni"></div>
+            <div class="asideni"></div>
+            <div class="asideni"></div>
+            <div class="asideni"></div>
+            <div class="asideni"></div>
+            <div class="asideni"></div>
+            <div class="asideni"></div>
+            <div class="asideni"></div>
+        </aside>
+        <div class="danscont">
+        <main>
+            <div class="sudsamain">
+                    <div class="firstsix">
+                        <div class="box2babes"></div>
+                        <div class="box2babes"></div>
+                    </div>              
+                </div>
+            </main>
+                <footer>
+
+                    <div class="footercont">
+                        <div class="fotcon1">
+                            <div class="footbox"></div>
+                        </div>
+                        <div class="fotcon2">
+                            <div class="name1">
+                               <div class="flexi">
+                                FLEXBOX</div>
+                               <div class="copycat">
+                                COPYRIGHT FLEXBOX</div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="footerbox2">
+                        <div class="fot1box"></div>
+                        <div class="fot1box"></div>
+                        <div class="fot1box"></div>
+                        <div class="fot1box"></div>
+                        <div class="fot1box"></div>
+                    </div>
+                </footer>
+        </div>
+            </div>
+        
+    </div>
+
+    
+</body>
+</html>
